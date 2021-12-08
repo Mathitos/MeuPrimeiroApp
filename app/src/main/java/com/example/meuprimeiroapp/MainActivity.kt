@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
     private val listaDeItens = mutableListOf<String>()
     private lateinit var dialog: MaterialAlertDialogBuilder
+    private val adapter = ListaDeItensAdapter(listaDeItens)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         dialog = MaterialAlertDialogBuilder(this)
+
+        val listaDeItens = findViewById<RecyclerView>(R.id.lista_de_itens)
+        listaDeItens.adapter = adapter
+        listaDeItens.layoutManager = LinearLayoutManager(this@MainActivity)
     }
 
     private fun abrirDialogParaCriarItem() {

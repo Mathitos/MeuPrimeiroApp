@@ -7,6 +7,15 @@
     tools:context=".MainActivity"
     >
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_de_itens"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botao_criar"
@@ -14,7 +23,7 @@
         android:layout_height="50dp"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:contentDescription="create"
+        android:contentDescription="create button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

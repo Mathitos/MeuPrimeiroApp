@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/mathe/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/mathe/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/mathe/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/create_item_dialog.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/mathe/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/item_da_lista.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>
